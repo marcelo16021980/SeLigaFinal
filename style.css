@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.cabecalho__imagem{
+    width: 5em;
+    height: 5em;
+}
+.cabecalho{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com 80% de transparência */
+    z-index:100; /* Garante que o cabeçalho fique acima dos outros elementos */
+  }
+.cabecalho__conteudo{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+    margin: 0 2em 0 2em;
+    align-items: center;
+}
+
+.cabecalho__titulo{
+    font-size: 1em;
+}
+.cabecalho__lista{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+}
+.cabecalho__busca {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Alinha os elementos verticalmente */
+    width: 45%;
+}
+
+.busca__input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+.busca__botao {
+    padding: 10px 20px;
+    background-color: #777c8e; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.busca__botao:hover{
+    background-color: #4CAF50;
+    color: black;
+}
+.lista__item a{
+    margin-right: 2em;
+    text-decoration: none;
+    color: white;
+}
+/* ... other CSS ... */
+
+.principal{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   padding-top: 3em;
+}
+.corpo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   background-image: linear-gradient(to bottom, #1e3a8a, grey);
+   padding-top: 3em;
+}
+.principal__imagem{
+    height: 20em;
+    width: 20em;
+}
+
+.trofeu{
+    width: 18em;
+    height: 18em;
+}
+.dedicatoria{
+    width: 60%;
+    margin: 0 1em 0 1em;
+    color: black;
+}
+.container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: rgb(31, 41, 178);
+    border: none;
+}
+.btn:hover{
+    background-color: #4CAF50;
+    color: black ;
+    border: none;
+}
+.rodape{
+    background-color: grey;
+    padding: 1em;
+
+}
+hr{
+    border-top: 2px solid #ccc; /* Ajuste a espessura e a cor da borda */
+}
+.topo, 
+.meio,
+.baixo{
+    display: flex;
+    justify-content: space-between;
+}
+.rodape__lista{
+    display: flex;
+}
+.topo__container{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 1em 0 0 1em;
+}
+.topo__lista:not( :last-child)::after{
+    content: "|";
+    margin-left: 5px;
+    font-size: 32px;
+}
+.topo__lista p{
+    margin-left: 1em;
+    font-weight: lighter;
+    font-style: italic;
+}
+.topo__ancora::after{
+    content: "|";
+    margin-left: 5px;
+    font-size: 32px;
+}
+.topo__ancora a{
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+   margin: 0 1em 0 1em;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.meio{
+    padding: 1em;
+    text-align: left;
+    justify-content: space-between;
+    
+}
+
+.meio__lista{
+    display: flex;
+    list-style-type: none;
+}
+.meio__item{
+    margin-right: 2em;
+}
+.meio__ancora a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: 700;
+
+}
+.meio__ancora::after{
+    content: "|";
+    margin: 5px;
+}
+.baixo__pltaut{
+    display: flex;
+}
+.icone{
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+.baixo__datr{
+    display: flex;
+    margin-left: 1em;
+    align-items: center;
+    text-align: center;
+}
+.baixo__datr p{
+    margin: 0 1em 0 1em;
+    font-style: none;
+}
