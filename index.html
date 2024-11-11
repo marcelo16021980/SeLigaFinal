@@ -32,29 +32,28 @@
         </p>
         <section class="container">
             <div class="card" style="width: 18rem; margin-top: 30px;">
-                <!-- Imagem do cartão -->
                 <img class="card-img-top" src="img/colegio-civico-militar-logo-D6A6779263-seeklogo.com.png" alt="Imagem do Cartão">
                 <div class="card-body">
-                    <!-- Título do cartão -->
                     <h5 class="card-title">Novo Título do Cartão</h5>
-                    <!-- Descrição do cartão -->
                     <p class="card-text">
                         Este é um cartão com uma nova descrição. Ele pode conter qualquer tipo de conteúdo relevante, como informações adicionais ou links para outras páginas.
                     </p>
-                    <!-- Link ou botão dentro do cartão -->
                     <a href="#" class="btn btn-primary">Saiba Mais</a>
                 </div>
             </div>
-    </section>
+        </section>
     </section>
 </main>
     <footer class="rodape">
-        <hr>
         <div class="topo">
             <ul class="topo__container">
-                <li class="topo__lista"><img class="icone" src="img/localizacao.png" alt=""></li>
-                <li class="topo__lista"><p>Colegio Estadual <br>
-                    Cataratas ECM</p></li>
+                <!-- Alterado o atributo para data-bs-toggle e data-bs-target -->
+                <li class="topo__lista">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img class="icone" src="img/localizacao.png" alt="Ícone de Localização">
+                    </button>
+                </li>
+                <li class="topo__lista"><p>Colegio Estadual <br> Cataratas ECM</p></li>
             </ul>
             <ul class="topo__container">
                 <li class="topo__ancora"><a href="#">contato</a></li>
@@ -62,6 +61,7 @@
                 <li class="topo__ancora"><a href="#">trabalhe com a gente</a></li>
             </ul>
         </div>
+        <hr>
         <div class="meio">
             <div class="meio__conteudo">
             <a href="" class="meio__item"><img src="img/facebook.png" alt="" class="icone"></a>
@@ -74,6 +74,7 @@
                 <li class="meio__ancora"><a href="">Reclamacoes</a></li>
             </ul>
         </div>
+        <hr>
         <div class="baixo">
             <div class="baixo__datr">
             <img class="icone" src="img/quill-desenhando-uma-linha.png" alt="">
@@ -92,6 +93,36 @@
         </div>
     </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mapa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.354570793218!2d-53.452335!3d-24.984617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d3c6d3d14d0477%3A0x7a32a9298f778ed3!2sR.%20Acelino%20de%20Almeida%20-%20Cataratas%2C%20Cascavel%20-%20PR%2C%2085818-610!5e0!3m2!1spt-BR!2sbr!4v1694098614569!5m2!1spt-BR!2sbr" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

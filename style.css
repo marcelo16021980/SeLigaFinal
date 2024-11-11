@@ -15,7 +15,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto com 80% de transparência */
+    background-color: rgba(0, 0, 40, 0.9); /* Fundo preto com 80% de transparência */
     z-index:100; /* Garante que o cabeçalho fique acima dos outros elementos */
   }
 .cabecalho__conteudo{
@@ -57,8 +57,8 @@ body{
     cursor: pointer;
 }
 .busca__botao:hover{
-    background-color: #4CAF50;
-    color: black;
+    background-color:  rgb(31, 41, 178);
+    color: gray;
 }
 .lista__item a{
     margin-right: 2em;
@@ -83,7 +83,8 @@ body{
     justify-content: center;
     min-height: 100vh;
    background-image: linear-gradient(to bottom, #1e3a8a, grey);
-   padding-top: 3em;
+   padding-top: 4em;
+   padding-bottom: 3em;
 }
 .principal__imagem{
     height: 20em;
@@ -105,21 +106,21 @@ body{
     justify-content: center;
 }
 .btn {
-    background-color: rgb(31, 41, 178);
+    background-color:gray;
+    color: white;
     border: none;
 }
 .btn:hover{
-    background-color: #4CAF50;
-    color: black ;
+    background-color: rgb(31, 41, 178);
+    color: gray ;
     border: none;
 }
 .rodape{
-    background-color: grey;
-    padding: 1em;
-
+    background-color: rgb(90, 87, 97);
+    padding: 0.3em 1em;
 }
 hr{
-    border-top: 2px solid #ccc; /* Ajuste a espessura e a cor da borda */
+    border-top: 2px solid #6dc3e6; /* Ajuste a espessura e a cor da borda */
 }
 .topo, 
 .meio,
@@ -134,7 +135,8 @@ hr{
     display: flex;
     list-style-type: none;
     align-items: center;
-    margin: 1em 0 0 1em;
+    margin: 0 5em 0 3em;
+    padding-right: 3em;
 }
 .topo__lista:not( :last-child)::after{
     content: "|";
@@ -160,7 +162,7 @@ hr{
     
 }
 .meio{
-    padding: 1em;
+    padding: 0.3em;
     text-align: left;
     justify-content: space-between;
     
@@ -186,6 +188,7 @@ hr{
 }
 .baixo__pltaut{
     display: flex;
+  
 }
 .icone{
     width: 2em;
@@ -201,4 +204,13 @@ hr{
 .baixo__datr p{
     margin: 0 1em 0 1em;
     font-style: none;
+}
+.btn-link{
+    background-color:rgb(90, 87, 97);
+}
+.btn-link:hover{
+    background-color: rgb(0, 8, 13);
+    border-radius: 50%;
+
+    
 }
